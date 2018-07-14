@@ -1,6 +1,8 @@
 # My Typora theme
 
-### Combine [monospace](https://theme.typora.io/theme/Monospace/) and [Monokai](https://codemirror.net/demo/theme.html#monokai) which provides a bright text style with a dark code style that's really cool!
+### A theme combines [monospace](https://theme.typora.io/theme/Monospace/) and [Monokai](https://codemirror.net/demo/theme.html#monokai) which provides a bright text style with a dark code style. 
+
+That's really cool!
 
 I just call it `Mono`.
 
