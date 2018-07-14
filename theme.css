@@ -392,7 +392,7 @@ hr:after {
 .md-fences:not(.md-fences-with-lineon) .cm-s-inner {
   padding-left: 8px;
 }
-.cm-s-inner.CodeMirror { background: #272822; color: #f8f8f2; }
+.cm-s-inner.CodeMirror { background: #272822; color: #f8f8f2;}
 .cm-s-inner div.CodeMirror-selected { background: #49483E; }
 .cm-s-inner .CodeMirror-line::selection, .cm-s-inner .CodeMirror-line > span::selection, .cm-s-inner .CodeMirror-line > span > span::selection { background: rgba(73, 72, 62, .99); }
 .cm-s-inner .CodeMirror-line::-moz-selection, .cm-s-inner .CodeMirror-line > span::-moz-selection, .cm-s-inner .CodeMirror-line > span > span::-moz-selection { background: rgba(73, 72, 62, .99); }
@@ -400,7 +400,10 @@ hr:after {
 .cm-s-inner .CodeMirror-guttermarker { color: white; }
 .cm-s-inner .CodeMirror-guttermarker-subtle { color: #d0d0d0; }
 .cm-s-inner .CodeMirror-linenumber { color: #d0d0d0; }
-.cm-s-inner .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+.CodeMirror .CodeMirror-cursor,
+.CodeMirror.cm-s-inner .CodeMirror-cursor {
+  border-left: 1px solid #f8f8f0;
+}
 
 .cm-s-inner span.cm-comment { color: #75715e; }
 .cm-s-inner span.cm-atom { color: #ae81ff; }
@@ -430,6 +433,7 @@ hr:after {
   text-decoration: underline;
   color: white !important;
 }
+
 /**apply to code fences with plan text**/
 .md-fences {
   background: #272822;
